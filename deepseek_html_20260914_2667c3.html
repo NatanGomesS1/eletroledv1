@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eletroled — Material Elétrico em Cabo Frio | Loja Física, Estoque Local</title>
+<meta name="description" content="Fios, cabos, iluminação LED, quadros e ferramentas em Cabo Frio. 4,9 estrelas no Google com 216 avaliações. Retirada no mesmo dia, frete na Região dos Lagos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --azul-eletrico:#0A4C86;
+    --azul-profundo:#062F54;
+    --amarelo-sinalizacao:#FFC530;
+    --laranja-acento:#E67E22;
+    --grafite:#3B3F45;
+    --grafite-soft:#5F6773;
+    --cinza-claro:#F4F6F8;
+    --borda:#E2E7EC;
+    --branco:#FFFFFF;
+    --verde-whatsapp:#25D366;
+    --verde-whatsapp-dark:#1EBE5B;
+    --font-display:'Poppins', sans-serif;
+    --font-body:'Inter', sans-serif;
+    --font-mono:'IBM Plex Mono', monospace;
+    --radius:8px;
+    --radius-lg:14px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--font-body); color:var(--grafite); background:var(--branco); line-height:1.6; -webkit-font-smoothing:antialiased;}
+  img{max-width:100%; display:block;}
+  h1,h2,h3{font-family:var(--font-display); color:var(--azul-eletrico); letter-spacing:-0.01em;}
+  .wrap{max-width:1140px; margin:0 auto; padding:0 24px;}
+  svg.ic{width:20px; height:20px; flex-shrink:0;}
+
+  /* ---------- HEADER ---------- */
+  header.lp-header{
+    background:var(--branco);
+    border-bottom:1px solid var(--borda);
+    padding:12px 0;
+    position:sticky; top:0; z-index:50;
+  }
+  header.lp-header .wrap{
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+  }
+  .logo-mark{
+    font-family:var(--font-display); font-weight:800; font-size:19px;
+    color:var(--azul-eletrico); letter-spacing:-0.02em; line-height:1;
+    display:flex; align-items:center; gap:8px;
+  }
+  .logo-mark .bolt{
+    width:26px; height:26px; background:var(--amarelo-sinalizacao);
+    border-radius:6px; display:flex; align-items:center; justify-content:center;
+    color:var(--azul-eletrico); flex-shrink:0;
+  }
+  .logo-mark .bolt svg{width:15px; height:15px;}
+  .header-phone{
+    display:inline-flex; align-items:center; gap:8px;
+    font-weight:600; font-size:14.5px; color:var(--azul-eletrico);
+    text-decoration:none; padding:9px 16px;
+    border:2px solid var(--azul-eletrico); border-radius:var(--radius);
+    transition:background .15s ease, color .15s ease;
+  }
+  .header-phone:hover{background:var(--azul-eletrico); color:var(--branco);}
+  .header-phone svg{width:16px; height:16px;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    color:var(--branco);
+    padding:96px 0 88px;
+    overflow:hidden;
+    background:var(--azul-eletrico);
+  }
+  .hero-bg{
+    position:absolute; inset:0;
+    background-image:url('img/fachada-eletroled.webp');
+    background-size:cover;
+    background-position:center;
+    z-index:0;
+  }
+  .hero-bg::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(120deg, rgba(6,47,84,0.92) 0%, rgba(10,76,134,0.82) 55%, rgba(6,47,84,0.72) 100%);
+  }
+  .hero .wrap{
+    position:relative; z-index:1;
+    display:grid; grid-template-columns:1.15fr 0.85fr; gap:48px; align-items:center;
+  }
+  .hero h1{
+    color:var(--branco);
+    font-size:clamp(2rem,1.2rem + 3.4vw,2.9rem);
+    font-weight:800; line-height:1.08;
+    max-width:640px;
+  }
+  .hero h1 .destaque{color:var(--amarelo-sinalizacao);}
+  .hero p.sub{
+    color:#D6E6F2; max-width:560px; margin-top:20px; font-size:17px;
+  }
+  .hero .cta-group{margin-top:32px;}
+  .btn{
+    font-family:var(--font-body); font-weight:700; font-size:15px;
+    padding:15px 30px; border-radius:var(--radius);
+    border:2px solid transparent; cursor:pointer;
+    transition:transform .15s ease, filter .15s ease;
+    display:inline-flex; align-items:center; gap:8px;
+    text-decoration:none; justify-content:center;
+  }
+  .btn-primary{background:var(--amarelo-sinalizacao); color:var(--azul-eletrico);}
+  .btn-primary:hover{filter:brightness(1.06); transform:translateY(-2px);}
+  .btn-primary svg{width:18px; height:18px;}
+  .click-trigger{
+    font-family:var(--font-mono); font-size:11.5px; color:#9AA3AC;
+    margin-top:14px; display:block;
+  }
+  .click-trigger.light{color:#A8C8E0;}
+
+  .hero-proof{
+    margin-top:28px;
+    background:rgba(255,255,255,0.10);
+    border:1px solid rgba(255,255,255,0.20);
+    border-radius:var(--radius);
+    padding:14px 18px;
+    max-width:460px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    backdrop-filter:blur(6px);
+  }
+  .hero-proof .g-logo{
+    flex-shrink:0;
+    width:40px; height:40px;
+    background:var(--branco);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .hero-proof .g-logo svg{width:24px; height:24px;}
+  .hero-proof .proof-text{line-height:1.35;}
+  .hero-proof .proof-text .score{
+    color:var(--branco); font-weight:700; font-size:16px;
+    display:flex; align-items:center; gap:6px;
+  }
+  .hero-proof .proof-text .score .stars{
+    color:var(--amarelo-sinalizacao); font-size:15px; letter-spacing:1px;
+  }
+  .hero-proof .proof-text .count{
+    font-size:13px; color:#D6E6F2; margin-top:2px;
+  }
+  .hero-proof .proof-text .count b{color:var(--branco); font-weight:600;}
+
+  .hero-box{
+    background:var(--branco); border-radius:var(--radius-lg);
+    padding:30px 28px; color:var(--grafite);
+    box-shadow:0 18px 40px rgba(0,0,0,0.28);
+  }
+  .hero-box h3{
+    font-size:1.05rem; margin-bottom:16px; color:var(--azul-eletrico);
+    font-family:var(--font-display); font-weight:700;
+  }
+  .hero-box ul{list-style:none;}
+  .hero-box li{
+    display:flex; gap:10px; align-items:flex-start;
+    font-size:14.5px; padding:9px 0; border-bottom:1px dashed var(--borda);
+  }
+  .hero-box li:last-child{border-bottom:none; padding-bottom:0;}
+  .hero-box li svg{width:18px; height:18px; color:var(--azul-eletrico); flex-shrink:0; margin-top:2px;}
+  .hero-box li b{display:block; font-weight:600; color:var(--grafite); font-size:14px;}
+  .hero-box li span{font-size:13px; color:var(--grafite-soft);}
+
+  /* ---------- MARCAS ---------- */
+  .brands{
+    background:var(--branco);
+    border-bottom:1px solid var(--borda);
+    padding:32px 0;
+    overflow:hidden;
+  }
+  .brands .label{
+    text-align:center;
+    font-family:var(--font-mono);
+    font-size:11.5px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:#9AA3AC;
+    margin-bottom:22px;
+  }
+  .brands .marquee{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    -webkit-mask-image:linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
+            mask-image:linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
+  }
+  .brands .track{
+    display:flex;
+    align-items:center;
+    gap:64px;
+    width:max-content;
+    animation:brandsScroll 40s linear infinite;
+  }
+  .brands .marquee:hover .track{
+    animation-play-state:paused;
+  }
+  .brands .item{
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:42px;
+    filter:grayscale(1);
+    opacity:0.65;
+    transition:opacity .2s ease, filter .2s ease;
+  }
+  .brands .item:hover{
+    opacity:1;
+    filter:grayscale(0);
+  }
+  .brands .item img{
+    max-height:42px;
+    max-width:150px;
+    width:auto;
+    height:auto;
+    object-fit:contain;
+  }
+  @keyframes brandsScroll{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .brands .track{animation:none;}
+  }
+
+  /* ---------- SEÇÕES BASE ---------- */
+  section.lp{padding:72px 0; border-bottom:1px solid var(--borda);}
+  section.lp.alt{background:var(--cinza-claro);}
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-family:var(--font-mono);
+    font-size:11.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--azul-eletrico);
+    font-weight:600;
+    background:var(--cinza-claro);
+    border:1px solid var(--borda);
+    padding:6px 14px;
+    border-radius:100px;
+    margin-bottom:16px;
+    line-height:1;
+  }
+  .lp h2.title{font-size:clamp(1.6rem,1.2rem + 1.6vw,2.1rem); font-weight:700; margin-bottom:10px; line-height:1.15;}
+  .lp .desc{max-width:700px; color:#6B7280; margin-bottom:40px; font-size:16px;}
+
+  /* ---------- DIFERENCIAIS ---------- */
+  .diff-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
+  }
+  .diff-item{
+    background:var(--branco); border:1px solid var(--borda);
+    border-radius:var(--radius); padding:26px 24px;
+  }
+  .diff-item .num{
+    font-family:var(--font-mono); font-size:12px; font-weight:600;
+    color:var(--laranja-acento); letter-spacing:0.08em; margin-bottom:12px; display:block;
+  }
+  .diff-item h3{
+    font-size:1.05rem; margin-bottom:8px; font-weight:600;
+    font-family:var(--font-display); color:var(--azul-eletrico);
+  }
+  .diff-item p{font-size:14.5px; color:var(--grafite-soft); line-height:1.6;}
+
+  /* ---------- FAIXA DE NÚMEROS ---------- */
+  .stats-band{
+    background:var(--azul-profundo);
+    color:var(--branco);
+    padding:56px 0;
+  }
+  .stats-band .stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+    text-align:center;
+  }
+  .stat-item{padding:8px 12px;}
+  .stat-item .stat-num{
+    font-family:var(--font-display);
+    font-size:clamp(1.9rem,1.4rem + 1.6vw,2.6rem);
+    font-weight:800;
+    color:var(--amarelo-sinalizacao);
+    line-height:1;
+    letter-spacing:-0.02em;
+    margin-bottom:8px;
+  }
+  .stat-item .stat-num .unit{
+    font-size:0.55em;
+    color:var(--branco);
+    font-weight:700;
+    margin-left:2px;
+  }
+  .stat-item .stat-label{
+    font-size:13.5px;
+    color:#C9DCEC;
+    line-height:1.4;
+    font-weight:500;
+  }
+
+  /* ---------- SITUAÇÕES ---------- */
+  .situation-list{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    max-width:980px;
+    margin:0 auto;
+  }
+  .situation-item{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    background:var(--branco);
+    border:1px solid var(--borda);
+    border-radius:var(--radius);
+    padding:16px 18px;
+    text-decoration:none;
+    color:var(--grafite);
+    font-size:14.5px;
+    line-height:1.5;
+    transition:border-color .15s ease, transform .15s ease, box-shadow .15s ease;
+  }
+  .situation-item:hover{
+    border-color:var(--azul-eletrico);
+    transform:translateY(-2px);
+    box-shadow:0 6px 16px rgba(10,76,134,0.08);
+  }
+  .situation-item .icon{
+    flex-shrink:0;
+    width:36px; height:36px;
+    background:var(--cinza-claro);
+    border-radius:6px;
+    display:flex; align-items:center; justify-content:center;
+    color:var(--azul-eletrico);
+    transition:background .15s ease, color .15s ease;
+  }
+  .situation-item .icon svg{width:20px; height:20px;}
+  .situation-item:hover .icon{background:var(--amarelo-sinalizacao); color:var(--azul-eletrico);}
+  .situation-item .txt{flex:1; min-width:0;}
+  .situation-item .txt b{
+    display:block;
+    font-family:var(--font-display);
+    font-weight:600;
+    color:var(--azul-eletrico);
+    font-size:14.5px;
+    margin-bottom:2px;
+  }
+  .situation-item .txt span{
+    font-size:13px;
+    color:var(--grafite-soft);
+    line-height:1.45;
+  }
+  .situation-item .arrow{
+    flex-shrink:0;
+    width:16px; height:16px;
+    color:#9AA3AC;
+    align-self:center;
+    transition:transform .15s ease, color .15s ease;
+  }
+  .situation-item:hover .arrow{transform:translateX(3px); color:var(--azul-eletrico);}
+
+  /* ---------- CATEGORIAS + ESTOQUE ---------- */
+  .cat-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+  }
+  .cat-photo{
+    position:relative;
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    box-shadow:0 14px 32px rgba(10,76,134,0.14);
+    aspect-ratio:4/5;
+  }
+  .cat-photo img{
+    width:100%; height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .cat-photo .badge{
+    position:absolute; left:16px; bottom:16px;
+    background:var(--amarelo-sinalizacao);
+    color:var(--azul-eletrico);
+    font-family:var(--font-mono);
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    padding:8px 12px;
+    border-radius:6px;
+  }
+  .cat-list{
+    list-style:none;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px 20px;
+  }
+  .cat-list li{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    font-size:14.5px;
+    color:var(--grafite);
+    line-height:1.4;
+  }
+  .cat-list li svg{
+    width:18px; height:18px; flex-shrink:0;
+    color:var(--azul-eletrico);
+    margin-top:2px;
+  }
+  .cat-list li b{
+    color:var(--azul-eletrico);
+    font-weight:600;
+    display:block;
+    font-family:var(--font-display);
+    font-size:14px;
+    margin-bottom:2px;
+  }
+  .cat-list li span{
+    font-size:12.5px;
+    color:var(--grafite-soft);
+  }
+
+  /* ---------- OFERTA ---------- */
+  .offer-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+  }
+  .offer-card{
+    background:var(--branco);
+    border:1px solid var(--borda);
+    border-radius:var(--radius);
+    padding:26px 22px;
+    transition:border-color .2s ease, transform .2s ease;
+  }
+  .offer-card:hover{
+    border-color:var(--amarelo-sinalizacao);
+    transform:translateY(-3px);
+  }
+  .offer-card .offer-icon{
+    width:44px; height:44px;
+    background:var(--azul-eletrico);
+    color:var(--amarelo-sinalizacao);
+    border-radius:var(--radius);
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:16px;
+  }
+  .offer-card .offer-icon svg{width:22px; height:22px;}
+  .offer-card h3{
+    font-size:1rem;
+    font-weight:600;
+    font-family:var(--font-display);
+    color:var(--azul-eletrico);
+    margin-bottom:8px;
+    line-height:1.25;
+  }
+  .offer-card p{
+    font-size:14px;
+    color:var(--grafite-soft);
+    line-height:1.55;
+  }
+
+  /* ---------- QUEM TE ATENDE ---------- */
+  .team-layout{
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:48px;
+    align-items:center;
+  }
+  .team-photo{
+    position:relative;
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    box-shadow:0 14px 32px rgba(10,76,134,0.14);
+    aspect-ratio:5/4;
+  }
+  .team-photo img{
+    width:100%; height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .team-copy .quote{
+    font-family:var(--font-display);
+    font-size:clamp(1.15rem,1rem + 0.6vw,1.35rem);
+    font-weight:600;
+    color:var(--azul-eletrico);
+    line-height:1.35;
+    margin-bottom:16px;
+    letter-spacing:-0.01em;
+  }
+  .team-copy p{
+    font-size:15px;
+    color:var(--grafite-soft);
+    line-height:1.65;
+    margin-bottom:14px;
+  }
+  .team-signature{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:20px;
+    padding-top:20px;
+    border-top:1px dashed var(--borda);
+  }
+  .team-signature .sig-name{
+    font-family:var(--font-display);
+    font-weight:700;
+    font-size:14px;
+    color:var(--azul-eletrico);
+  }
+  .team-signature .sig-role{
+    font-size:12.5px;
+    color:var(--grafite-soft);
+  }
+
+  /* ---------- AVALIAÇÕES ---------- */
+  .reviews-head{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:24px;
+    margin-bottom:32px;
+    flex-wrap:wrap;
+  }
+  .reviews-head .score-block{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+  .reviews-head .score-big{
+    font-family:var(--font-display);
+    font-weight:800;
+    font-size:2.4rem;
+    color:var(--azul-eletrico);
+    line-height:1;
+    letter-spacing:-0.02em;
+  }
+  .reviews-head .score-stars{
+    color:var(--amarelo-sinalizacao);
+    font-size:18px;
+    letter-spacing:3px;
+    display:block;
+    margin-bottom:4px;
+  }
+  .reviews-head .score-count{
+    font-size:13px;
+    color:var(--grafite-soft);
+  }
+  .reviews-head .g-logo-inline{
+    width:34px; height:34px;
+    background:var(--branco);
+    border:1px solid var(--borda);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+  .reviews-head .g-logo-inline svg{width:20px; height:20px;}
+
+  .reviews-carousel{
+    position:relative;
+    overflow:hidden;
+    -webkit-mask-image:linear-gradient(to right, transparent 0, #000 4%, #000 96%, transparent 100%);
+            mask-image:linear-gradient(to right, transparent 0, #000 4%, #000 96%, transparent 100%);
+  }
+  .reviews-track{
+    display:flex;
+    gap:18px;
+    width:max-content;
+    animation:reviewsScroll 48s linear infinite;
+  }
+  .reviews-carousel:hover .reviews-track{animation-play-state:paused;}
+  @keyframes reviewsScroll{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .reviews-track{animation:none; flex-wrap:wrap; width:auto;}
+  }
+  .review-card{
+    background:var(--branco);
+    border:1px solid var(--borda);
+    border-radius:var(--radius);
+    padding:22px;
+    width:340px;
+    flex-shrink:0;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .review-card .rv-head{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .review-card .avatar{
+    width:38px; height:38px;
+    border-radius:50%;
+    background:var(--azul-eletrico);
+    color:var(--branco);
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--font-display);
+    font-weight:700;
+    font-size:15px;
+    flex-shrink:0;
+  }
+  .review-card .rv-name{
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:14px;
+    color:var(--azul-eletrico);
+    line-height:1.2;
+  }
+  .review-card .rv-source{
+    font-size:11.5px;
+    color:#9AA3AC;
+    display:flex;
+    align-items:center;
+    gap:4px;
+    margin-top:2px;
+  }
+  .review-card .rv-source svg{width:12px; height:12px;}
+  .review-card .rv-stars{
+    color:var(--amarelo-sinalizacao);
+    font-size:14px;
+    letter-spacing:2px;
+  }
+  .review-card .rv-text{
+    font-size:14px;
+    color:var(--grafite);
+    line-height:1.6;
+  }
+
+  /* ---------- REGIÕES ---------- */
+  .region-wrap{
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:32px;
+    align-items:stretch;
+  }
+  .region-map{
+    background:var(--branco);
+    border:1px solid var(--borda);
+    border-radius:var(--radius);
+    overflow:hidden;
+    min-height:380px;
+    position:relative;
+  }
+  .region-map iframe{
+    width:100%;
+    height:100%;
+    min-height:380px;
+    border:0;
+    display:block;
+    filter:grayscale(0.15);
+  }
+  .region-cities{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  .region-cities h3{
+    font-family:var(--font-display);
+    font-size:1.05rem;
+    color:var(--azul-eletrico);
+    font-weight:700;
+    margin-bottom:16px;
+  }
+  .city-list{
+    list-style:none;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px 20px;
+  }
+  .city-list li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:14.5px;
+    color:var(--grafite);
+    padding:6px 0;
+  }
+  .city-list li svg{
+    width:16px; height:16px; flex-shrink:0;
+    color:#1EBE5B;
+  }
+  .region-note{
+    margin-top:20px;
+    font-size:13.5px;
+    color:var(--grafite-soft);
+    line-height:1.55;
+    padding-top:18px;
+    border-top:1px dashed var(--borda);
+  }
+  .region-note a{color:var(--azul-eletrico); font-weight:600; text-decoration:none;}
+  .region-note a:hover{text-decoration:underline;}
+
+  /* ---------- CTA INTERMEDIÁRIO ---------- */
+  .cta-band{
+    background:var(--azul-eletrico); color:var(--branco);
+    padding:56px 0; text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .cta-band::before{
+    content:"";
+    position:absolute; inset:0;
+    background:radial-gradient(circle at 20% 50%, rgba(255,197,48,0.08) 0%, transparent 45%),
+               radial-gradient(circle at 80% 50%, rgba(255,197,48,0.06) 0%, transparent 45%);
+    pointer-events:none;
+  }
+  .cta-band .wrap{position:relative; z-index:1;}
+  .cta-band h2{
+    color:var(--branco); font-size:clamp(1.45rem,1.15rem + 1.3vw,1.9rem);
+    font-weight:700; margin-bottom:12px;
+  }
+  .cta-band p{color:#C9DCEC; font-size:16px; max-width:560px; margin:0 auto 28px;}
+  .cta-band .btn-primary{margin:0 auto;}
+  .cta-band .click-trigger.light{text-align:center;}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:760px; margin:0 auto;}
+  .faq-item{
+    background:var(--branco); border:1px solid var(--borda);
+    border-radius:var(--radius); margin-bottom:10px; overflow:hidden;
+  }
+  .faq-item summary{
+    cursor:pointer; list-style:none; padding:18px 22px;
+    display:flex; justify-content:space-between; align-items:center; gap:14px;
+    font-family:var(--font-display); font-weight:600; font-size:15px;
+    color:var(--azul-eletrico);
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary .chev{
+    width:18px; height:18px; flex-shrink:0; transition:transform .2s ease;
+    color:var(--azul-eletrico);
+  }
+  .faq-item[open] summary .chev{transform:rotate(180deg);}
+  .faq-item .faq-body{
+    padding:0 22px 20px; font-size:14.5px; color:var(--grafite-soft);
+    line-height:1.65;
+  }
+
+  /* ---------- REDUÇÃO DE RISCO ---------- */
+  .risk-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+    max-width:1000px;
+    margin:0 auto;
+  }
+  .risk-item{
+    background:var(--branco);
+    border:1px solid var(--borda);
+    border-radius:var(--radius);
+    padding:26px 24px;
+    text-align:center;
+  }
+  .risk-item .risk-icon{
+    width:52px; height:52px;
+    background:var(--cinza-claro);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    margin:0 auto 16px;
+    color:var(--azul-eletrico);
+  }
+  .risk-item .risk-icon svg{width:24px; height:24px;}
+  .risk-item h3{
+    font-size:1rem;
+    font-weight:600;
+    font-family:var(--font-display);
+    color:var(--azul-eletrico);
+    margin-bottom:8px;
+    line-height:1.25;
+  }
+  .risk-item p{
+    font-size:14px;
+    color:var(--grafite-soft);
+    line-height:1.55;
+  }
+
+  /* ---------- CTA FINAL COM CONTATO ---------- */
+  .final-cta{
+    background:var(--azul-profundo);
+    color:var(--branco);
+    padding:64px 0;
+  }
+  .final-cta .wrap{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:56px;
+    align-items:center;
+  }
+  .final-cta h2{
+    color:var(--branco);
+    font-size:clamp(1.6rem,1.2rem + 1.6vw,2.2rem);
+    font-weight:800;
+    line-height:1.15;
+    margin-bottom:16px;
+    letter-spacing:-0.01em;
+  }
+  .final-cta p{
+    color:#C9DCEC;
+    font-size:16px;
+    line-height:1.65;
+    margin-bottom:28px;
+    max-width:520px;
+  }
+  .final-cta .btn-primary{padding:17px 34px; font-size:15.5px;}
+  .contact-block{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.14);
+    border-radius:var(--radius-lg);
+    padding:28px;
+  }
+  .contact-block h3{
+    color:var(--branco);
+    font-family:var(--font-display);
+    font-size:1.05rem;
+    font-weight:700;
+    margin-bottom:20px;
+  }
+  .contact-block ul{list-style:none;}
+  .contact-block li{
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    padding:12px 0;
+    border-bottom:1px dashed rgba(255,255,255,0.14);
+    font-size:14.5px;
+    color:#D6E6F2;
+    line-height:1.5;
+  }
+  .contact-block li:last-child{border-bottom:none; padding-bottom:0;}
+  .contact-block li svg{
+    width:18px; height:18px; flex-shrink:0;
+    color:var(--amarelo-sinalizacao);
+    margin-top:2px;
+  }
+  .contact-block li b{
+    color:var(--branco);
+    font-weight:600;
+    display:block;
+    font-size:13px;
+    margin-bottom:2px;
+    font-family:var(--font-mono);
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+  }
+  .contact-block li a{
+    color:#D6E6F2;
+    text-decoration:none;
+  }
+  .contact-block li a:hover{color:var(--amarelo-sinalizacao);}
+
+  /* ---------- FOOTER ---------- */
+  .lp-footer{
+    background:var(--azul-profundo); color:#8FB4D1;
+    padding:20px 0; text-align:center; font-size:13px;
+    border-top:1px solid rgba(255,255,255,0.08);
+  }
+  .lp-footer a{color:var(--amarelo-sinalizacao); text-decoration:none;}
+  .lp-footer a:hover{text-decoration:underline;}
+
+  /* ---------- BOTÃO FLUTUANTE WHATSAPP ---------- */
+  .wpp-float{
+    position:fixed; right:22px; bottom:22px; z-index:100;
+    display:inline-flex; align-items:center; gap:10px;
+    background:var(--verde-whatsapp); color:#FFFFFF;
+    font-family:var(--font-body); font-weight:700; font-size:15px;
+    padding:14px 22px 14px 18px; border-radius:50px;
+    text-decoration:none;
+    box-shadow:0 10px 26px rgba(37,211,102,0.38), 0 4px 10px rgba(0,0,0,0.15);
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+  }
+  .wpp-float:hover{
+    background:var(--verde-whatsapp-dark);
+    transform:translateY(-3px);
+    box-shadow:0 14px 30px rgba(37,211,102,0.48), 0 6px 14px rgba(0,0,0,0.18);
+  }
+  .wpp-float svg{width:26px; height:26px; flex-shrink:0; fill:currentColor;}
+  .wpp-float .wpp-label{white-space:nowrap; line-height:1;}
+
+  .wpp-float::before{
+    content:""; position:absolute; inset:0; border-radius:50px;
+    background:var(--verde-whatsapp); opacity:0.45; z-index:-1;
+    animation:wppPulse 2.4s ease-out infinite;
+  }
+  @keyframes wppPulse{
+    0%{transform:scale(1); opacity:0.45;}
+    70%{transform:scale(1.18); opacity:0;}
+    100%{transform:scale(1.18); opacity:0;}
+  }
+
+  /* ---------- RESPONSIVO ---------- */
+  @media (max-width:960px){
+    .hero{padding:72px 0 64px;}
+    .hero .wrap{grid-template-columns:1fr; gap:32px;}
+    .hero-box{max-width:520px;}
+    .diff-grid{grid-template-columns:1fr 1fr;}
+    .stats-band .stats-grid{grid-template-columns:1fr 1fr; gap:32px;}
+    .cat-layout{grid-template-columns:1fr; gap:32px;}
+    .cat-photo{aspect-ratio:16/10; max-height:380px;}
+    .offer-grid{grid-template-columns:1fr 1fr;}
+    .team-layout{grid-template-columns:1fr; gap:32px;}
+    .region-wrap{grid-template-columns:1fr; gap:24px;}
+    .region-map{min-height:320px;}
+    .region-map iframe{min-height:320px;}
+    .risk-grid{grid-template-columns:1fr; gap:16px;}
+    .final-cta .wrap{grid-template-columns:1fr; gap:36px;}
+  }
+  @media (max-width:768px){
+    section.lp{padding:56px 0;}
+    .brands .track{gap:44px; animation-duration:30s;}
+    .brands .item{height:36px;}
+    .brands .item img{max-height:36px; max-width:120px;}
+    .situation-list{grid-template-columns:1fr;}
+    .cat-list{grid-template-columns:1fr;}
+    .review-card{width:290px;}
+  }
+  @media (max-width:520px){
+    .diff-grid{grid-template-columns:1fr;}
+    .offer-grid{grid-template-columns:1fr;}
+    .stats-band .stats-grid{grid-template-columns:1fr 1fr; gap:24px;}
+    .stat-item .stat-num{font-size:1.7rem;}
+    .header-phone span{display:none;}
+    .header-phone{padding:9px 12px;}
+    .btn{width:100%;}
+    .wpp-float{padding:0; width:60px; height:60px; right:18px; bottom:18px; justify-content:center;}
+    .wpp-float .wpp-label{display:none;}
+    .wpp-float svg{width:30px; height:30px;}
+    .city-list{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="lp-header">
+  <div class="wrap">
+    <div class="logo-mark">
+      <span class="bolt">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </span>
+      Eletroled
+    </div>
+    <a class="header-phone" href="https://wa.me/5522999999999?text=Ol%C3%A1%2C%20preciso%20de%20material%20el%C3%A9trico" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01zM12.05 20.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+      <span>(22) 99999-9999</span>
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <h1>Precisa de material elétrico <span class="destaque">agora</span> em Cabo Frio?</h1>
+      <p class="sub">Fios, cabos, iluminação LED, quadros, disjuntores e ferramentas. Atendimento rápido pra quem tá na correria da obra e explicação sem pressa pra quem não é da área.</p>
+
+      <div class="cta-group">
+        <a class="btn btn-primary" href="https://wa.me/5522999999999?text=Ol%C3%A1%2C%20preciso%20de%20material%20el%C3%A9trico%20agora" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01zM12.05 20.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+          Falar no WhatsApp agora
+        </a>
+        <span class="click-trigger light">Manda foto do que você precisa que a gente confirma estoque</span>
+      </div>
+
+      <div class="hero-proof">
+        <div class="g-logo">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.09a6.6 6.6 0 0 1 0-4.18V7.07H2.18a11 11 0 0 0 0 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg>
+        </div>
+        <div class="proof-text">
+          <div class="score">
+            4,9 <span class="stars">★★★★★</span>
+          </div>
+          <div class="count"><b>216 avaliações</b> no Google · Cabo Frio</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-box">
+      <h3>Por que a Eletroled?</h3>
+      <ul>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16l2 2 4-4"/><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/><path d="M3.3 7L12 12l8.7-5"/><path d="M12 22V12"/></svg>
+          <div><b>Estoque disponível</b><span>O que você precisa, na hora que precisa</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <div><b>Atende profissional e pessoa física</b><span>Sem enrolação pra quem é da área, sem pressa pra quem não é</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div><b>Resposta ainda hoje</b><span>Manda no WhatsApp, a gente responde rápido</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><b>Cabo Frio e Região dos Lagos</b><span>Loja física, atendimento local</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARCAS ============ -->
+<section class="brands" aria-label="Marcas que trabalhamos">
+  <div class="label">Marcas que você encontra na Eletroled</div>
+  <div class="marquee">
+    <div class="track">
+      <div class="item"><img src="logos/3m.webp" alt="3M"></div>
+      <div class="item"><img src="logos/margirius.webp" alt="Margirius"></div>
+      <div class="item"><img src="logos/sil.png" alt="Sil"></div>
+      <div class="item"><img src="logos/legrand.png" alt="Legrand"></div>
+      <div class="item"><img src="logos/schneider.png" alt="Schneider Electric"></div>
+      <div class="item"><img src="logos/siemens.webp" alt="Siemens"></div>
+      <div class="item"><img src="logos/steck.png" alt="Steck"></div>
+      <div class="item"><img src="logos/tramontina.webp" alt="Tramontina"></div>
+      <div class="item" aria-hidden="true"><img src="logos/3m.webp" alt=""></div>
+      <div class="item" aria-hidden="true"><img src="logos/margirius.webp" alt=""></div>
+      <div class="item" aria-hidden="true"><img src="logos/sil.png" alt=""></div>
+      <div class="item" aria-hidden="true"><img src="logos/legrand.png" alt=""></div>
+      <div class="item" aria-hidden="true"><img src="logos/schneider.png" alt=""></div>
+      <div class="item" aria-hidden="true"><img src="logos/siemens.webp" alt=""></div>
+      <div class="item" aria-hidden="true"><img src="logos/steck.png" alt=""></div>
+      <div class="item" aria-hidden="true"><img src="logos/tramontina.webp" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIFERENCIAIS ============ -->
+<section class="lp">
+  <div class="wrap">
+    <span class="eyebrow">Diferenciais</span>
+    <h2 class="title">Por que a Eletroled e não outra loja?</h2>
+    <p class="desc">Atendimento pensado pros dois perfis que chegam aqui: o eletricista que precisa de agilidade e a pessoa física que precisa de orientação.</p>
+
+    <div class="diff-grid">
+      <div class="diff-item">
+        <span class="num">01</span>
+        <h3>Agilidade pra quem tá na obra</h3>
+        <p>Se você é eletricista ou profissional, sabe o que precisa. A gente não enrola: confirma estoque, separa e você segue com o serviço.</p>
+      </div>
+      <div class="diff-item">
+        <span class="num">02</span>
+        <h3>Orientação pra quem não é da área</h3>
+        <p>Não sabe qual cabo, disjuntor ou luminária? A gente explica sem pressa e ajuda a escolher o material certo pro seu caso.</p>
+      </div>
+      <div class="diff-item">
+        <span class="num">03</span>
+        <h3>Estoque local em Cabo Frio</h3>
+        <p>Material disponível na loja, sem espera de encomenda de fora. Você resolve hoje, não semana que vem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAIXA DE NÚMEROS ============ -->
+<section class="stats-band">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-num">4,9<span class="unit">★</span></div>
+        <div class="stat-label">Nota média no Google</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">216</div>
+        <div class="stat-label">Avaliações de clientes</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100<span class="unit">%</span></div>
+        <div class="stat-label">Loja física em Cabo Frio</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">Hoje</div>
+        <div class="stat-label">Estoque pronto pra retirar</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SITUAÇÕES ============ -->
+<section class="lp alt">
+  <div class="wrap">
+    <span class="eyebrow">Qual a sua situação?</span>
+    <h2 class="title">Me diz o que você precisa resolver</h2>
+    <p class="desc">Toca na situação que mais parece com a sua. Abre o WhatsApp com a mensagem já pronta — a gente responde ainda hoje.</p>
+
+    <div class="situation-list">
+
+      <a class="situation-item" href="https://wa.me/5522999999999?text=Oi%2C%20faltou%20material%20aqui%20na%20obra%20e%20preciso%20repor%20r%C3%A1pido.%20Voc%C3%AAs%20t%C3%AAm%20em%20estoque%3F" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+        </span>
+        <span class="txt">
+          <b>Faltou material no meio da obra</b>
+          <span>Preciso repor rápido pra não travar o serviço.</span>
+        </span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </a>
+
+      <a class="situation-item" href="https://wa.me/5522999999999?text=Oi%2C%20preciso%20comprar%20cabo%20mas%20n%C3%A3o%20sei%20qual%20bitola%20usar.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9a2 2 0 0 1-2-2V5h6v2a2 2 0 0 1-2 2Z"/><path d="M3 5V3"/><path d="M7 5V3"/><path d="M19 15a2 2 0 0 0 2 2v2h-6v-2a2 2 0 0 0 2-2Z"/><path d="M21 19v2"/><path d="M17 19v2"/><path d="M12 12l-4 0"/><path d="M12 12l4 0"/><path d="M12 12v-2"/><path d="M12 12v2"/></svg>
+        </span>
+        <span class="txt">
+          <b>Não sei qual cabo usar</b>
+          <span>Não sei a bitola certa pro que eu preciso fazer.</span>
+        </span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </a>
+
+      <a class="situation-item" href="https://wa.me/5522999999999?text=Oi%2C%20preciso%20de%20disjuntor%20mas%20n%C3%A3o%20sei%20qual.%20Pode%20me%20indicar%3F" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+        </span>
+        <span class="txt">
+          <b>Não sei qual disjuntor é o certo</b>
+          <span>Não sei a amperagem nem o tipo correto.</span>
+        </span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </a>
+
+      <a class="situation-item" href="https://wa.me/5522999999999?text=Oi%2C%20vou%20fazer%20uma%20instala%C3%A7%C3%A3o%20nova%20e%20preciso%20de%20uma%20lista%20completa.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-4"/><path d="M9 11V7a3 3 0 0 1 6 0v4"/></svg>
+        </span>
+        <span class="txt">
+          <b>Vou fazer uma instalação nova</b>
+          <span>Preciso comprar tudo de uma vez, sem esquecer nada.</span>
+        </span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </a>
+
+      <a class="situation-item" href="https://wa.me/5522999999999?text=Oi%2C%20quero%20trocar%20a%20ilumina%C3%A7%C3%A3o%20pra%20LED.%20O%20que%20voc%C3%AAs%20recomendam%3F" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+        </span>
+        <span class="txt">
+          <b>Quero trocar tudo pra LED</b>
+          <span>Não sei quais lâmpadas nem quantas comprar.</span>
+        </span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </a>
+
+      <a class="situation-item" href="https://wa.me/5522999999999?text=Oi%2C%20sou%20eletricista%20e%20preciso%20de%20material%20em%20quantidade.%20Como%20faz%3F" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </span>
+        <span class="txt">
+          <b>Sou eletricista, preciso em quantidade</b>
+          <span>Quero saber sobre preço pra volume e agilidade.</span>
+        </span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </a>
+
+      <a class="situation-item" href="https://wa.me/5522999999999?text=Oi%2C%20voc%C3%AAs%20t%C3%AAm%20%5Bmaterial%5D%20em%20estoque%3F%20Quero%20confirmar%20antes%20de%20passar%20a%C3%AD." target="_blank" rel="noopener">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16l2 2 4-4"/><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/><path d="M3.3 7L12 12l8.7-5"/><path d="M12 22V12"/></svg>
+        </span>
+        <span class="txt">
+          <b>Quero confirmar estoque antes de ir</b>
+          <span>Não quero sair de casa à toa.</span>
+        </span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </a>
+
+      <a class="situation-item" href="https://wa.me/5522999999999?text=Oi%2C%20quero%20fazer%20%5Btal%20coisa%5D%20mas%20n%C3%A3o%20sei%20o%20que%20preciso%20comprar.%20Pode%20me%20orientar%3F" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+        </span>
+        <span class="txt">
+          <b>Não sei o que preciso comprar</b>
+          <span>Sei o que quero fazer, mas não sei o que comprar.</span>
+        </span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA INTERMEDIÁRIO ============ -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Não achou a sua situação?</h2>
+    <p>Manda no WhatsApp que a gente confirma estoque e te responde ainda hoje.</p>
+    <a class="btn btn-primary" href="https://wa.me/5522999999999?text=Ol%C3%A1%2C%20preciso%20de%20um%20material%20espec%C3%ADfico" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01zM12.05 20.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+      Falar no WhatsApp agora
+    </a>
+    <span class="click-trigger light">Atendimento rápido · sem compromisso · resposta ainda hoje</span>
+  </div>
+</section>
+
+<!-- ============ CATEGORIAS + ESTOQUE ============ -->
+<section class="lp">
+  <div class="wrap">
+    <span class="eyebrow">Categorias</span>
+    <h2 class="title">O que você encontra na Eletroled</h2>
+    <p class="desc">Material de qualidade, das marcas que você já conhece, tudo na loja em Cabo Frio.</p>
+
+    <div class="cat-layout">
+      <div class="cat-photo">
+        <img src="img/estoque-eletroled.webp" alt="Estoque da Eletroled em Cabo Frio">
+        <span class="badge">Estoque local · Cabo Frio</span>
+      </div>
+
+      <ul class="cat-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9a2 2 0 0 1-2-2V5h6v2a2 2 0 0 1-2 2Z"/><path d="M3 5V3"/><path d="M7 5V3"/><path d="M19 15a2 2 0 0 0 2 2v2h-6v-2a2 2 0 0 0 2-2Z"/><path d="M21 19v2"/><path d="M17 19v2"/></svg>
+          <div><b>Fios e cabos</b><span>Cabo flexível, rígido, cordão, cabo PP</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+          <div><b>Iluminação LED</b><span>Lâmpadas, painéis, refletores, fitas</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          <div><b>Quadros e disjuntores</b><span>Disjuntores, DR, DPS e barramentos</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></svg>
+          <div><b>Tomadas e interruptores</b><span>Tomadas, interruptores, placas</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          <div><b>Ferramentas</b><span>Alicates, chaves, multímetros</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>
+          <div><b>Automação residencial</b><span>Interruptores inteligentes, sensores</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFERTA ============ -->
+<section class="lp alt">
+  <div class="wrap">
+    <span class="eyebrow">O que você ganha</span>
+    <h2 class="title">Comprar na Eletroled</h2>
+    <p class="desc">Quatro coisas que fazem diferença quando você tá resolvendo material elétrico.</p>
+
+    <div class="offer-grid">
+
+      <div class="offer-card">
+        <div class="offer-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16l2 2 4-4"/><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/><path d="M3.3 7L12 12l8.7-5"/><path d="M12 22V12"/></svg>
+        </div>
+        <h3>Retirada no mesmo dia</h3>
+        <p>Confirma no WhatsApp e passa na loja em Cabo Frio pra retirar ainda hoje.</p>
+      </div>
+
+      <div class="offer-card">
+        <div class="offer-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h3>Frete na Região</h3>
+        <p>Entregamos na Região dos Lagos. Combina o frete direto no WhatsApp antes de fechar.</p>
+      </div>
+
+      <div class="offer-card">
+        <div class="offer-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Atende Região dos Lagos</h3>
+        <p>Cabo Frio, Búzios, Arraial, São Pedro, Iguaba e mais. Manda no WhatsApp e a gente confirma.</p>
+      </div>
+
+      <div class="offer-card">
+        <div class="offer-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+        </div>
+        <h3>Dúvidas com especialista</h3>
+        <p>Não sabe o que comprar? Manda no WhatsApp que a gente te orienta sem compromisso.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUEM TE ATENDE ============ -->
+<section class="lp">
+  <div class="wrap">
+    <span class="eyebrow">Quem te atende</span>
+    <h2 class="title">Gente de verdade pra te ajudar</h2>
+    <p class="desc">Aqui você não fala com robô nem com formulário. Fala com quem entende de material elétrico — e explica sem pressa quando precisa.</p>
+
+    <div class="team-layout">
+      <div class="team-photo">
+        <img src="img/equipe-eletroled.webp" alt="Equipe da Eletroled em Cabo Frio">
+      </div>
+
+      <div class="team-copy">
+        <p class="quote">"Nosso time atende tanto o eletricista que já sabe o que precisa, quanto a pessoa que só quer resolver o problema em casa."</p>
+        <p>Trabalhamos com profissional e pessoa física, todos os dias. Se você chega com uma lista, a gente confirma estoque e separa. Se você chega com uma dúvida, a gente explica o que comprar e por quê.</p>
+        <p>Sem enrolação, sem pressa, sem aquele vendedor que trata você como se você já soubesse tudo.</p>
+
+        <div class="team-signature">
+          <div>
+            <div class="sig-name">Equipe Eletroled</div>
+            <div class="sig-role">Atendimento em Cabo Frio · Região dos Lagos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AVALIAÇÕES ============ -->
+<section class="lp alt">
+  <div class="wrap">
+    <div class="reviews-head">
+      <div>
+        <span class="eyebrow">Prova</span>
+        <h2 class="title" style="margin-bottom:0;">O que dizem sobre a Eletroled</h2>
+      </div>
+      <div class="score-block">
+        <div class="g-logo-inline">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.09a6.6 6.6 0 0 1 0-4.18V7.07H2.18a11 11 0 0 0 0 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg>
+        </div>
+        <div>
+          <div class="score-big">4,9</div>
+        </div>
+        <div>
+          <span class="score-stars">★★★★★</span>
+          <div class="score-count">216 avaliações no Google</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-carousel">
+      <div class="reviews-track">
+
+        <article class="review-card">
+          <div class="rv-head">
+            <div class="avatar">H</div>
+            <div>
+              <div class="rv-name">Hamannda Tavares</div>
+              <div class="rv-source">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01z"/></svg>
+                Google · há 1 semana
+              </div>
+            </div>
+          </div>
+          <div class="rv-stars">★★★★★</div>
+          <p class="rv-text">"Essa loja tem tudo para minha casa, os preços maravilhosos. Super indico!!!"</p>
+        </article>
+
+        <article class="review-card">
+          <div class="rv-head">
+            <div class="avatar">W</div>
+            <div>
+              <div class="rv-name">Wollber Materko</div>
+              <div class="rv-source">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01z"/></svg>
+                Google · há 1 semana
+              </div>
+            </div>
+          </div>
+          <div class="rv-stars">★★★★★</div>
+          <p class="rv-text">"Excelente atendimento no balcão da loja, atendente cordial e paciente, tirou todas as dúvidas e encontrei tudo o que procurava."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="rv-head">
+            <div class="avatar">C</div>
+            <div>
+              <div class="rv-name">Cazuza Cunha</div>
+              <div class="rv-source">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01z"/></svg>
+                Google · há 6 dias
+              </div>
+            </div>
+          </div>
+          <div class="rv-stars">★★★★★</div>
+          <p class="rv-text">"Ótima experiência, atendente solícito e resolveu o problema da melhor forma. Que continuem assim!"</p>
+        </article>
+
+        <article class="review-card">
+          <div class="rv-head">
+            <div class="avatar">D</div>
+            <div>
+              <div class="rv-name">Dayse Christiane</div>
+              <div class="rv-source">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01z"/></svg>
+                Google · há 6 dias
+              </div>
+            </div>
+          </div>
+          <div class="rv-stars">★★★★★</div>
+          <p class="rv-text">"Recomendo a loja, excelente atendimento. Melhor preço da região."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="rv-head">
+            <div class="avatar">D</div>
+            <div>
+              <div class="rv-name">Dayse Cunha</div>
+              <div class="rv-source">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01z"/></svg>
+                Google · há 6 dias
+              </div>
+            </div>
+          </div>
+          <div class="rv-stars">★★★★★</div>
+          <p class="rv-text">"Excelente atendimento e bom preço, recomendo."</p>
+        </article>
+
+        <article class="review-card" aria-hidden="true">
+          <div class="rv-head">
+            <div class="avatar">H</div>
+            <div>
+              <div class="rv-name">Hamannda Tavares</div>
+              <div class="rv-source">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01z"/></svg>
+                Google · há 1 semana
+              </div>
+            </div>
+          </div>
+          <div class="rv-stars">★★★★★</div>
+          <p class="rv-text">"Essa loja tem tudo para minha casa, os preços maravilhosos. Super indico!!!"</p>
+        </article>
+
+        <article class="review-card" aria-hidden="true">
+          <div class="rv-head">
+            <div class="avatar">W</div>
+            <div>
+              <div class="rv-name">Wollber Materko</div>
+              <div class="rv-source">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01z"/></svg>
+                Google · há 1 semana
+              </div>
+            </div>
+          </div>
+          <div class="rv-stars">★★★★★</div>
+          <p class="rv-text">"Excelente atendimento no balcão da loja, atendente cordial e paciente, tirou todas as dúvidas e encontrei tudo o que procurava."</p>
+        </article>
+
+        <article class="review-card" aria-hidden="true">
+          <div class="rv-head">
+            <div class="avatar">C</div>
+            <div>
+              <div class="rv-name">Cazuza Cunha</div>
+              <div class="rv-source">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01z"/></svg>
+                Google · há 6 dias
+              </div>
+            </div>
+          </div>
+          <div class="rv-stars">★★★★★</div>
+          <p class="rv-text">"Ótima experiência, atendente solícito e resolveu o problema da melhor forma. Que continuem assim!"</p>
+        </article>
+
+        <article class="review-card" aria-hidden="true">
+          <div class="rv-head">
+            <div class="avatar">D</div>
+            <div>
+              <div class="rv-name">Dayse Christiane</div>
+              <div class="rv-source">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01z"/></svg>
+                Google · há 6 dias
+              </div>
+            </div>
+          </div>
+          <div class="rv-stars">★★★★★</div>
+          <p class="rv-text">"Recomendo a loja, excelente atendimento. Melhor preço da região."</p>
+        </article>
+
+        <article class="review-card" aria-hidden="true">
+          <div class="rv-head">
+            <div class="avatar">D</div>
+            <div>
+              <div class="rv-name">Dayse Cunha</div>
+              <div class="rv-source">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01z"/></svg>
+                Google · há 6 dias
+              </div>
+            </div>
+          </div>
+          <div class="rv-stars">★★★★★</div>
+          <p class="rv-text">"Excelente atendimento e bom preço, recomendo."</p>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REGIÕES ============ -->
+<section class="lp">
+  <div class="wrap">
+    <span class="eyebrow">Localização</span>
+    <h2 class="title">Regiões que atendemos</h2>
+    <p class="desc">Loja física em Cabo Frio, atendendo toda a Região dos Lagos. Se você é de fora da lista, manda no WhatsApp que a gente confirma.</p>
+
+    <div class="region-wrap">
+      <div class="region-map">
+        <iframe
+          title="Mapa da região atendida pela Eletroled"
+          src="https://www.google.com/maps?q=R.+Paulo+Ribeiro,+1650+-+Palmeiras,+Cabo+Frio+-+RJ&output=embed&z=12"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="region-cities">
+        <h3>Cidades atendidas</h3>
+        <ul class="city-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Cabo Frio</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Armação dos Búzios</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Arraial do Cabo</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> São Pedro da Aldeia</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Iguaba Grande</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Casimiro de Abreu</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Rio das Ostras</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Barra de São João</li>
+        </ul>
+
+        <p class="region-note">
+          Não achou a sua cidade? <a href="https://wa.me/5522999999999?text=Oi%2C%20sou%20de%20%5Bcidade%5D.%20Voc%C3%AAs%20atendem%20aqui%3F" target="_blank" rel="noopener">Manda no WhatsApp</a> que a gente confirma.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="lp alt">
+  <div class="wrap">
+    <span class="eyebrow">Dúvidas frequentes</span>
+    <h2 class="title" style="text-align:center; margin-bottom:8px;">Perguntas que a gente mais recebe</h2>
+    <p class="desc" style="text-align:center; margin-left:auto; margin-right:auto;">Se a sua dúvida não estiver aqui, manda no WhatsApp.</p>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>
+          Vocês atendem pessoa física ou só profissional?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="faq-body">Os dois. Atendemos eletricistas e profissionais da área que já sabem o que precisam, e também pessoa física que precisa de orientação pra escolher o material certo.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Tem estoque disponível ou precisa encomendar?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="faq-body">A maior parte do material está disponível na loja, em Cabo Frio. Manda no WhatsApp que a gente confirma na hora se o que você precisa tem em estoque.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Vocês entregam?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="faq-body">Sim. Fazemos entrega na Região dos Lagos. O frete é combinado antes pelo WhatsApp, sem surpresa. Manda o endereço que a gente confirma.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Qual o horário de atendimento?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="faq-body">[Confirmar horário real com o cliente.]</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Não sei qual material preciso. Vocês ajudam?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="faq-body">Ajudamos sim. Descreve o que você precisa fazer no WhatsApp que a gente explica sem pressa e indica o material certo.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REDUÇÃO DE RISCO ============ -->
+<section class="lp">
+  <div class="wrap">
+    <span class="eyebrow">Sem risco</span>
+    <h2 class="title" style="text-align:center; margin-bottom:8px;">Comprar sem compromisso</h2>
+    <p class="desc" style="text-align:center; margin-left:auto; margin-right:auto;">Três coisas que a gente garante antes de você decidir.</p>
+
+    <div class="risk-grid">
+
+      <div class="risk-item">
+        <div class="risk-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <h3>A gente confirma antes</h3>
+        <p>Se o material não tiver em estoque, avisamos antes de você sair de casa. Sem perder viagem.</p>
+      </div>
+
+      <div class="risk-item">
+        <div class="risk-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+        </div>
+        <h3>Atendimento sem compromisso</h3>
+        <p>Manda dúvida no WhatsApp, a gente responde. Você só fecha se quiser — sem pressão de venda.</p>
+      </div>
+
+      <div class="risk-item">
+        <div class="risk-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h3>Frete combinado antes</h3>
+        <p>O valor do frete na Região dos Lagos é fechado antes. Sem surpresa na entrega.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="final-cta">
+  <div class="wrap">
+    <div>
+      <h2>Pronto pra resolver seu material elétrico?</h2>
+      <p>Fala com a gente no WhatsApp. Atendimento rápido, sem compromisso, resposta ainda hoje. Se preferir, passa na loja física em Cabo Frio.</p>
+      <a class="btn btn-primary" href="https://wa.me/5522999999999?text=Ol%C3%A1%2C%20preciso%20de%20material%20el%C3%A9trico" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01zM12.05 20.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+        Falar no WhatsApp agora
+      </a>
+      <span class="click-trigger light">Atendimento rápido · sem compromisso · resposta ainda hoje</span>
+    </div>
+
+    <div class="contact-block">
+      <h3>Onde nos encontrar</h3>
+      <ul>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <b>Endereço</b>
+            R. Paulo Ribeiro, 1650 — Palmeiras<br>Cabo Frio — RJ
+          </div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01z"/></svg>
+          <div>
+            <b>WhatsApp</b>
+            <a href="https://wa.me/5522999999999" target="_blank" rel="noopener">(22) 99999-9999</a>
+          </div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            <b>Horário</b>
+            [Confirmar com o cliente]
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="lp-footer">
+  <div class="wrap">
+    © Eletroled — Cabo Frio e Região dos Lagos. Todos os direitos reservados.
+  </div>
+</footer>
+
+<!-- ============ BOTÃO FLUTUANTE WHATSAPP ============ -->
+<a class="wpp-float" href="https://wa.me/5522999999999?text=Ol%C3%A1%2C%20preciso%20de%20material%20el%C3%A9trico" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01zM12.05 20.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+  <span class="wpp-label">Falar no WhatsApp</span>
+</a>
+
+</body>
+</html>
